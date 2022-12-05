@@ -15,11 +15,9 @@ export const Header = () => {
                 >
                   <img
                     src="https://markdoor.net/pecopecopenguin/wp-content/uploads/2022/11/cropped-cropped-彦摩呂NFTPJ-3P-3.png"
-                    class="custom-logo"
+                    className="custom-logo"
                     alt="Peco Peco Penguin"
                     decoding="async"
-                    srcset="https://markdoor.net/pecopecopenguin/wp-content/uploads/2022/11/cropped-cropped-彦摩呂NFTPJ-3P-3.png 512w, https://markdoor.net/pecopecopenguin/wp-content/uploads/2022/11/cropped-cropped-彦摩呂NFTPJ-3P-3-300x229.png 300w"
-                    sizes="(max-width: 512px) 100vw, 512px"
                   />
                 </a>
               </div>

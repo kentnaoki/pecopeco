@@ -6,7 +6,7 @@ import { PostSection } from "./PostSection";
 function App() {
   return (
     <div className="App">
-      <a class="skip-link screen-reader-text" href="#content">
+      <a className="skip-link screen-reader-text" href="#content">
         コンテンツへスキップ
       </a>
       <Header />
