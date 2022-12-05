@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BreadcrumbSection } from "./BreadcrumbSection";
+import { Header } from "./Header";
+import { PostSection } from "./PostSection";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <a class="skip-link screen-reader-text" href="#content">
+        コンテンツへスキップ
+      </a>
+      <Header />
+      <BreadcrumbSection />
+      <PostSection />
     </div>
   );
 }
