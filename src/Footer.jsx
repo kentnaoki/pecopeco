@@ -13,7 +13,7 @@ export const Footer = () => {
     >
       <div className="footer-content">
         <div className="footer-main">
-          <div>
+          <div className="row-content">
             <div className="icon">
               <a href="./">
                 <img src="https://markdoor.net/pecopecopenguin/wp-content/plugins/burger-companion/inc/appetizer/images/icon_gif/footer-above-info/avatar-calm-approved.gif" />
@@ -23,7 +23,7 @@ export const Footer = () => {
               <a href="./">Privacy Policy</a>
             </div>
           </div>
-          <div>
+          <div className="row-content">
             <div className="icon">
               <a href="./">
                 <img
@@ -36,7 +36,7 @@ export const Footer = () => {
               <a href="./">利用規約</a>
             </div>
           </div>
-          <div>
+          <div className="row-content">
             <div className="icon">
               <a href="./">
                 <img
@@ -49,7 +49,7 @@ export const Footer = () => {
               <a href="./">利用規約・特定商取引法に基づく表記</a>
             </div>
           </div>
-          <div>
+          <div className="row-content">
             <div className="icon">
               <a href="./">
                 <img
@@ -63,7 +63,17 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="footer-copyright"></div>
+        <div className="footer-copyright">
+          <div className="copyright">
+            Copyright © 2022 Peco Peco Penguin | Powered by Appetizer
+          </div>
+          <div className="contact">
+            <div className="icon">
+              <i></i>
+            </div>
+            <div>お問い合わせ</div>
+          </div>
+        </div>
       </div>
     </footer>
   );
