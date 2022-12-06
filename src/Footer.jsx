@@ -65,13 +65,12 @@ export const Footer = () => {
         </div>
         <div className="footer-copyright">
           <div className="copyright">
-            Copyright © 2022 Peco Peco Penguin | Powered by Appetizer
+            Copyright © 2022 Peco Peco Penguin |<br></br> Powered by Appetizer
           </div>
           <div className="contact">
-            <div className="icon">
-              <i></i>
+            <div>
+              <a href="./">お問い合わせ</a>
             </div>
-            <div>お問い合わせ</div>
           </div>
         </div>
       </div>
