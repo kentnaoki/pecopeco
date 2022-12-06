@@ -1,0 +1,11 @@
+#footer-section {
+}
+
+.footer-content {
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-main {
+  display: flex;
+}
