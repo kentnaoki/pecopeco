@@ -1,5 +1,6 @@
 import "./App.css";
 import { BreadcrumbSection } from "./BreadcrumbSection";
+import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { PostSection } from "./PostSection";
 
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <BreadcrumbSection />
       <PostSection />
+      <Footer />
     </div>
   );
 }
