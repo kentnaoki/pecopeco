@@ -39,24 +39,33 @@
 }
 
 .breadcrumb-heading {
-  flex-direction: column;
-  align-items: flex-start;
+  display: flex;
   justify-content: center;
   padding: 0;
   width: 100%;
   max-width: 50%;
+  position: relative;
 }
 
 .breadcrumb-center .breadcrumb-heading {
   text-align: center;
   max-width: 100%;
+  padding-top: 101px;
 }
 
 .heading-text-container {
   font-weight: bold;
   color: #999999;
   font-size: larger;
-  padding-top: 101px;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.connect-wallet {
+  right: 0;
+  position: absolute;
+}
+
+.connect-wallet-button {
+  cursor: pointer;
 }

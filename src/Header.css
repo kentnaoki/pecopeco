@@ -2,9 +2,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background: #fff;
-  -webkit-transition: min-height 0.3s ease;
-  transition: min-height 0.3s ease;
   width: 100%;
   z-index: 3;
 }
