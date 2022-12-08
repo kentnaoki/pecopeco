@@ -1,5 +1,6 @@
 import "./BreadcrumbSection.css";
 import "./Header.css";
+import { ConnectButton } from "web3uikit";
 
 export const BreadcrumbSection = (props) => {
   return (
@@ -20,12 +21,7 @@ export const BreadcrumbSection = (props) => {
                 <div>三方よしの食コミュニティを目指します</div>
               </div>
               <div className="connect-wallet">
-                <button
-                  onClick={props.handleClick}
-                  className="connect-wallet-button"
-                >
-                  connect wallet
-                </button>
+                <ConnectButton moralisAuth={false} />
               </div>
             </div>
           </div>
