@@ -1,11 +1,50 @@
 import "./PostSection.css";
 import { PostItems } from "./PostItems";
+import styled from "styled-components";
+
+const PostSectionStyle = styled.div`
+  .post-section {
+    margin: 100px auto;
+  }
+  .items-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 576px) {
+    .items-container {
+      max-width: 540px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .items-container {
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .items-container {
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .items-container {
+      max-width: 1140px;
+    }
+  }
+  .post-items {
+    box-shadow: 0px 0px 9.4px 0.6px rgb(152 152 152 / 63%);
+    border-radius: 4px;
+  }
+`;
 
 export const PostSection = () => {
   return (
-    <div>
+    <PostSectionStyle>
       <section className="post-section">
-        <div className="container">
+        <div className="items-container">
           <article className="post-items">
             {PostItems.map((e) => {
               return (
@@ -29,6 +68,6 @@ export const PostSection = () => {
           </article>
         </div>
       </section>
-    </div>
+    </PostSectionStyle>
   );
 };
