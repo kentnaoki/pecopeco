@@ -11,7 +11,7 @@ export const PostSection = () => {
               return (
                 <div className="post-item">
                   {e.header !== null ? <h2>{e.header}</h2> : null}
-                  <div className="post-item-wrapper">{e.content}</div>
+                  {e.content.text !== null ? <div>test2</div> : <div>test</div>}
                 </div>
               );
             })}
