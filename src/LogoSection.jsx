@@ -1,12 +1,10 @@
-import "./BreadcrumbSection.css";
-import "./Header.css";
 import { ConnectButton } from "web3uikit";
 import styled from "styled-components";
 import logo from "./img/logo.png";
 
 const LogoSectionStyle = styled.div`
   .logo-section {
-    background-image: ${logo};
+    background-image: url(${logo});
     width: 100%;
     position: relative;
     z-index: 1;
