@@ -29,7 +29,7 @@ const ButtonStyle = styled.div`
   }
 `;
 
-const ButtonStyleHorizontal = styled.div`
+const IconButtonStyleHorizontal = styled.div`
   .button-container {
     display: flex;
     justify-content: center;
@@ -93,9 +93,9 @@ export const PostItems = [
     id: "three",
     header: null,
     content: (
-      <ButtonStyleHorizontal>
+      <IconButtonStyleHorizontal>
         <Btn btn={iconButtonList} />
-      </ButtonStyleHorizontal>
+      </IconButtonStyleHorizontal>
     ),
   },
   {
