@@ -1,4 +1,3 @@
-import "./PostSection.css";
 import { PostItems } from "./PostItems";
 import styled from "styled-components";
 import { ItemContent } from "./ItemContent";
@@ -53,7 +52,7 @@ const PostSectionStyle = styled.div`
     margin: 10px auto;
   }
   .zero {
-    background: linear-gradient(to right bottom, #b9b9b9, #202020);
+    background: linear-gradient(to right bottom, white, grey);
   }
   .one {
     background: linear-gradient(to right bottom, #e4a5b3, #e20333);

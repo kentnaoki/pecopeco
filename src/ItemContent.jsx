@@ -6,6 +6,26 @@ const ItemStyle = styled.div`
     justify-content: center;
     align-items: center;
   }
+  .list-item {
+    display: flex;
+    margin: 1.5rem auto;
+  }
+
+  .list-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .list-image-container {
+    width: 300px;
+  }
+  .list-text-container {
+    width: 300px;
+    display: flex;
+    align-items: center;
+  }
+  .list-text-container p {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 `;
 
 export const ItemContent = (props) => {
@@ -16,11 +36,13 @@ export const ItemContent = (props) => {
           <ul>
             {props.e.content.map((element) => {
               return (
-                <li key={element.id}>
+                <li className="list-item" key={element.id}>
                   <div className="list-image-container">
                     <img src={element.image} alt={element.text} />
                   </div>
-                  <div className="list-text-container">{element.text}</div>
+                  <div className="list-text-container">
+                    <p>{element.text}</p>
+                  </div>
                 </li>
               );
             })}
