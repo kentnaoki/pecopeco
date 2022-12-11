@@ -1,10 +1,12 @@
 import "./PostSection.css";
 import { PostItems } from "./PostItems";
 import styled from "styled-components";
+import { ItemContent } from "./ItemContent";
 
 const PostSectionStyle = styled.div`
   .post-section {
-    margin: 100px auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .items-container {
     width: 100%;
@@ -37,6 +39,33 @@ const PostSectionStyle = styled.div`
   .post-items {
     box-shadow: 0px 0px 9.4px 0.6px rgb(152 152 152 / 63%);
     border-radius: 4px;
+    padding: 20px;
+  }
+  h2 {
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .post-item {
+    box-sizing: border-box;
+    padding: 2rem;
+    margin: 10px auto;
+  }
+  .zero {
+    background: linear-gradient(to right bottom, #b9b9b9, #202020);
+  }
+  .one {
+    background: linear-gradient(to right bottom, #e4a5b3, #e20333);
+  }
+  .two {
+    background: linear-gradient(to right bottom, grey, white);
+  }
+  .three {
+    background: linear-gradient(to right bottom, #e4a5b3, #e20333);
+  }
+  .four {
+    background: linear-gradient(to right bottom, #b9b9b9, #202020);
   }
 `;
 
@@ -48,20 +77,9 @@ export const PostSection = () => {
           <article className="post-items">
             {PostItems.map((e) => {
               return (
-                <div className="post-item" key={e.id}>
+                <div className={"post-item " + e.id}>
                   {e.header !== null ? <h2>{e.header}</h2> : null}
-                  {Array.isArray(e.content)
-                    ? e.content.map((element) => {
-                        return (
-                          <div key={element.id}>
-                            <div>{element.text}</div>
-                            <div>
-                              <img src={element.image} alt={element.text} />
-                            </div>
-                          </div>
-                        );
-                      })
-                    : e.content}
+                  <ItemContent e={e} />
                 </div>
               );
             })}
