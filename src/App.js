@@ -1,5 +1,5 @@
 import "./App.css";
-import { BreadcrumbSection } from "./BreadcrumbSection";
+import { LogoSection } from "./LogoSection";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { PostSection } from "./PostSection";
@@ -11,7 +11,7 @@ function App() {
         コンテンツへスキップ
       </a>
       <Header />
-      <BreadcrumbSection />
+      <LogoSection />
       <PostSection />
       <Footer />
     </div>

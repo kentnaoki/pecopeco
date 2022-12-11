@@ -7,14 +7,20 @@ import { Btn } from "./Btn";
 import styled from "styled-components";
 
 const buttonList = [
-  "ご購入はこちら☚",
-  "開発用B",
-  "仮想通貨_保有ユーザー",
-  "仮想通貨_非保有ユーザー",
+  { id: 0, content: "ご購入はこちら☚" },
+  { id: 1, content: "開発用B" },
+  { id: 2, content: "仮想通貨_保有ユーザー" },
+  { id: 3, content: "仮想通貨_非保有ユーザー" },
 ];
 const iconButtonList = [
-  <img className="discord-image" src={discord} alt="discord" />,
-  <img className="twitter-image" src={twitter} alt="twitter" />,
+  {
+    id: 0,
+    content: <img className="discord-image" src={discord} alt="discord" />,
+  },
+  {
+    id: 1,
+    content: <img className="twitter-image" src={twitter} alt="twitter" />,
+  },
 ];
 
 const ButtonStyle = styled.div`

@@ -76,7 +76,7 @@ export const PostSection = () => {
           <article className="post-items">
             {PostItems.map((e) => {
               return (
-                <div className={"post-item " + e.id}>
+                <div className={"post-item " + e.id} key={e.id}>
                   {e.header !== null ? <h2>{e.header}</h2> : null}
                   <ItemContent e={e} />
                 </div>
