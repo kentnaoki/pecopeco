@@ -11,6 +11,11 @@
   background-color: black;
   background-position: center;
 }
+
+.background-black {
+  height: 260px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 /* 
 .breadcrumb-center.breadcrumb-area::before {
   content: "";
