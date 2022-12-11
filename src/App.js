@@ -1,9 +1,8 @@
 import "./App.css";
-import { BreadcrumbSection } from "./BreadcrumbSection";
+import { LogoSection } from "./LogoSection";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { PostSection } from "./PostSection";
-import styled from "styled-components";
 
 function App() {
   return (
@@ -12,7 +11,7 @@ function App() {
         コンテンツへスキップ
       </a>
       <Header />
-      <BreadcrumbSection />
+      <LogoSection />
       <PostSection />
       <Footer />
     </div>

@@ -52,19 +52,19 @@ const PostSectionStyle = styled.div`
     margin: 10px auto;
   }
   .zero {
-    background: linear-gradient(to right bottom, white, grey);
+    background: linear-gradient(to right bottom, #eecbd3, #e20333);
   }
   .one {
-    background: linear-gradient(to right bottom, #e4a5b3, #e20333);
+    background: linear-gradient(to right bottom, white, grey);
   }
   .two {
-    background: linear-gradient(to right bottom, grey, white);
+    background: linear-gradient(to right bottom, #eecbd3, #e20333);
   }
   .three {
-    background: linear-gradient(to right bottom, #e4a5b3, #e20333);
+    background: linear-gradient(to right bottom, #b9b9b9, #202020);
   }
   .four {
-    background: linear-gradient(to right bottom, #b9b9b9, #202020);
+    background: linear-gradient(to right bottom, #eecbd3, #e20333);
   }
 `;
 
@@ -76,7 +76,7 @@ export const PostSection = () => {
           <article className="post-items">
             {PostItems.map((e) => {
               return (
-                <div className={"post-item " + e.id}>
+                <div className={"post-item " + e.id} key={e.id}>
                   {e.header !== null ? <h2>{e.header}</h2> : null}
                   <ItemContent e={e} />
                 </div>
