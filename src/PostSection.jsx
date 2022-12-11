@@ -1,95 +1,90 @@
-import "./PostSection.css";
+import { PostItems } from "./PostItems";
+import styled from "styled-components";
+import { ItemContent } from "./ItemContent";
+
+const PostSectionStyle = styled.div`
+  .post-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .items-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 576px) {
+    .items-container {
+      max-width: 540px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .items-container {
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .items-container {
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .items-container {
+      max-width: 1140px;
+    }
+  }
+  .post-items {
+    box-shadow: 0px 0px 9.4px 0.6px rgb(152 152 152 / 63%);
+    border-radius: 4px;
+    padding: 20px;
+  }
+  h2 {
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .post-item {
+    box-sizing: border-box;
+    padding: 2rem;
+    margin: 10px auto;
+  }
+  .zero {
+    background: linear-gradient(to right bottom, white, grey);
+  }
+  .one {
+    background: linear-gradient(to right bottom, #e4a5b3, #e20333);
+  }
+  .two {
+    background: linear-gradient(to right bottom, grey, white);
+  }
+  .three {
+    background: linear-gradient(to right bottom, #e4a5b3, #e20333);
+  }
+  .four {
+    background: linear-gradient(to right bottom, #b9b9b9, #202020);
+  }
+`;
 
 export const PostSection = () => {
   return (
-    <div>
+    <PostSectionStyle>
       <section className="post-section">
-        <div className="container">
+        <div className="items-container">
           <article className="post-items">
-            <div className="post-content">
-              <div className="post-item" id="first-item">
-                <h2>PPPとは</h2>
-              </div>
-              <div className="post-item" id="second-item">
-                <h2>PPPの特徴</h2>
-                <div className="post-item-wrapper">
-                  <ul className="post-second-list">
-                    <li className="post-second-list-item">
-                      <div className="post-second-image-container">
-                        <img src="https://markdoor.net/pecopecopenguin/wp-content/uploads/2022/11/profile_img-300x300.png" />
-                      </div>
-                      <div className="post-second-text-container">
-                        <p>芸能人/著名人も参加する食コミュニティ</p>
-                      </div>
-                    </li>
-                    <li className="post-second-list-item">
-                      <div className="post-second-image-container">
-                        <img src="https://markdoor.net/pecopecopenguin/wp-content/uploads/2022/11/スクリーンショット-2022-11-28-080412-300x294.png" />
-                      </div>
-                      <div className="post-second-text-container">
-                        <p>NFTを出したい飲食店の支援</p>
-                      </div>
-                    </li>
-                    <li className="post-second-list-item">
-                      <div className="post-second-image-container">
-                        <img src="https://markdoor.net/pecopecopenguin/wp-content/uploads/2022/11/スクリーンショット-2022-11-28-074659-1-300x294.png" />
-                      </div>
-                      <div className="post-second-text-container">
-                        <p>会員限定レビューの公開/食べ物勝手にコンテスト実施</p>
-                      </div>
-                    </li>
-                  </ul>
+            {PostItems.map((e) => {
+              return (
+                <div className={"post-item " + e.id}>
+                  {e.header !== null ? <h2>{e.header}</h2> : null}
+                  <ItemContent e={e} />
                 </div>
-              </div>
-              <div className="post-item" id="third-item">
-                <div className="block-button-container">
-                  <div className="block-button">
-                    <a href="./" className="block-button-link">
-                      <strong>ご購入はこちら☚</strong>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="post-item" id="fourth-item">
-                <div className="icons">
-                  <div className="icon-container">
-                    <a href="./" className="discord-link">
-                      <img
-                        className="discord-image"
-                        src="https://markdoor.net/pecopecopenguin/wp-content/uploads/2022/11/ダウンロード-1.png"
-                      />
-                    </a>
-                  </div>
-                  <div className="icon-container">
-                    <a href="./" className="twitter-link">
-                      <img
-                        className="twitter-image"
-                        src="https://markdoor.net/pecopecopenguin/wp-content/uploads/2022/11/ダウンロード-2.png"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="post-item" id="fifth-item">
-                <div className="block-button-row">
-                  <div className="fifth-post-button-container">
-                    <a href="./" className="row-button-link">
-                      <strong>ご購入はこちら☚</strong>
-                    </a>
-                  </div>
-                  <div className="fifth-post-button-container">
-                    <a href="./" className="row-button-link">
-                      <strong>開発用B</strong>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </article>
         </div>
       </section>
-    </div>
+    </PostSectionStyle>
   );
 };
