@@ -1,12 +1,17 @@
 import hikomaro from "./img/hikomaro.png";
 import restaurant from "./img/restaurant.png";
 import smartphone from "./img/smartphone.png";
-import discord from "./img/discord.png";
+import discord from "./img/discord-trimmed.png";
 import twitter from "./img/twitter.png";
 import { Btn } from "./Btn";
 import styled from "styled-components";
 
-const buttonList = ["ご購入はこちら☚", "開発用B"];
+const buttonList = [
+  "ご購入はこちら☚",
+  "開発用B",
+  "仮想通貨_保有ユーザー",
+  "仮想通貨_非保有ユーザー",
+];
 const iconButtonList = [
   <img className="discord-image" src={discord} alt="discord" />,
   <img className="twitter-image" src={twitter} alt="twitter" />,
@@ -26,21 +31,33 @@ const ButtonStyle = styled.div`
     border-radius: 17px;
     border: none;
     padding: 1rem;
+    box-shadow: 0px 0px 9.4px 0.6px rgb(152 152 152 / 63%);
+  }
+  button:hover {
+    background-color: #c4c1c1;
+    box-shadow: 0px 0px 9.4px 0.6px rgb(0 0 0);
   }
 `;
 
-const IconButtonStyleHorizontal = styled.div`
+const ButtonStyleHorizontal = styled.div`
   .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     gap: 100px;
   }
+`;
+
+const IconButtonStyleHorizontal = styled.div`
   button {
     cursor: pointer;
     padding: 0;
     margin: 0;
     border: none;
+  }
+  button:hover {
+    box-shadow: 0px 0px 9.4px 0.6px rgb(0 0 0);
   }
   img {
     display: block;
@@ -82,20 +99,26 @@ export const PostItems = [
   },
   {
     id: "two",
-    header: null,
+    header: "ご購入はこちら☚",
     content: (
-      <ButtonStyle>
-        <Btn btn={[buttonList[0]]} />
-      </ButtonStyle>
+      <div>
+        <ButtonStyle>
+          <ButtonStyleHorizontal>
+            <Btn btn={buttonList.slice(2, 4)} />
+          </ButtonStyleHorizontal>
+        </ButtonStyle>
+      </div>
     ),
   },
   {
     id: "three",
     header: null,
     content: (
-      <IconButtonStyleHorizontal>
-        <Btn btn={iconButtonList} />
-      </IconButtonStyleHorizontal>
+      <ButtonStyleHorizontal>
+        <IconButtonStyleHorizontal>
+          <Btn btn={iconButtonList} />
+        </IconButtonStyleHorizontal>
+      </ButtonStyleHorizontal>
     ),
   },
   {
@@ -103,7 +126,7 @@ export const PostItems = [
     header: null,
     content: (
       <ButtonStyle>
-        <Btn btn={buttonList} />
+        <Btn btn={buttonList.slice(0, 2)} />
       </ButtonStyle>
     ),
   },

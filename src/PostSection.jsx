@@ -52,19 +52,19 @@ const PostSectionStyle = styled.div`
     margin: 10px auto;
   }
   .zero {
-    background: linear-gradient(to right bottom, white, grey);
+    background: linear-gradient(to right bottom, #eecbd3, #e20333);
   }
   .one {
-    background: linear-gradient(to right bottom, #e4a5b3, #e20333);
+    background: linear-gradient(to right bottom, white, grey);
   }
   .two {
-    background: linear-gradient(to right bottom, grey, white);
+    background: linear-gradient(to right bottom, #eecbd3, #e20333);
   }
   .three {
-    background: linear-gradient(to right bottom, #e4a5b3, #e20333);
+    background: linear-gradient(to right bottom, #b9b9b9, #202020);
   }
   .four {
-    background: linear-gradient(to right bottom, #b9b9b9, #202020);
+    background: linear-gradient(to right bottom, #eecbd3, #e20333);
   }
 `;
 
