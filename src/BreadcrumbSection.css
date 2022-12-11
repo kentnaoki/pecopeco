@@ -1,12 +1,17 @@
-.breadcrumb-area {
+.breadcrumb-section {
+  background-image: url("./img/logo.png");
   width: 100%;
   position: relative;
   z-index: 1;
   height: auto;
   display: block;
   min-height: 260px;
+  background-size: auto 260px;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
 }
-
+/* 
 .breadcrumb-center.breadcrumb-area::before {
   content: "";
   position: absolute;
@@ -52,7 +57,7 @@
   max-width: 100%;
   padding-top: 101px;
 }
-
+*/
 .heading-text-container {
   font-weight: bold;
   color: #999999;
@@ -60,6 +65,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
+/*
 
 .connect-wallet {
   right: 0;
@@ -68,4 +74,4 @@
 
 .connect-wallet-button {
   cursor: pointer;
-}
+} */

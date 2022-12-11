@@ -3,7 +3,6 @@ import { BreadcrumbSection } from "./BreadcrumbSection";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { PostSection } from "./PostSection";
-import styled from "styled-components";
 
 function App() {
   return (
