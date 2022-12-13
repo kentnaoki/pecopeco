@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { footerItems } from "./FooterItems";
 
 export const Footer = () => {
   return (
@@ -13,55 +14,20 @@ export const Footer = () => {
     >
       <div className="footer-content">
         <div className="footer-main">
-          <div className="row-content">
-            <div className="icon">
-              <a href="./">
-                <img src="https://markdoor.net/pecopecopenguin/wp-content/plugins/burger-companion/inc/appetizer/images/icon_gif/footer-above-info/avatar-calm-approved.gif" />
-              </a>
-            </div>
-            <div className="footer-info">
-              <a href="./">Privacy Policy</a>
-            </div>
-          </div>
-          <div className="row-content">
-            <div className="icon">
-              <a href="./">
-                <img
-                  src="https://markdoor.net/pecopecopenguin/wp-content/plugins/burger-companion/inc/appetizer/images/icon_gif/footer-above-info/shield-security.gif"
-                  alt="利用規約"
-                />
-              </a>
-            </div>
-            <div className="footer-info">
-              <a href="./">利用規約</a>
-            </div>
-          </div>
-          <div className="row-content">
-            <div className="icon">
-              <a href="./">
-                <img
-                  src="https://markdoor.net/pecopecopenguin/wp-content/plugins/burger-companion/inc/appetizer/images/icon_gif/footer-above-info/gift.gif"
-                  alt="利用規特定商取引法に基づく表記"
-                />
-              </a>
-            </div>
-            <div className="footer-info">
-              <a href="./">利用規約・特定商取引法に基づく表記</a>
-            </div>
-          </div>
-          <div className="row-content">
-            <div className="icon">
-              <a href="./">
-                <img
-                  src="https://markdoor.net/pecopecopenguin/wp-content/uploads/2022/11/小見出しを追加-300x300.png"
-                  alt="運営会社"
-                />
-              </a>
-            </div>
-            <div className="footer-info">
-              <a href="./">運営会社 Mark Doorについて</a>
-            </div>
-          </div>
+          {footerItems.map((e) => {
+            return (
+              <div className="row-content" key={e.id}>
+                <div className="icon">
+                  <a href="./">
+                    <img src={e.img} />
+                  </a>
+                </div>
+                <div className="footer-info">
+                  <a href="./">{e.text}</a>
+                </div>
+              </div>
+            );
+          })}
         </div>
         <div className="footer-copyright">
           <div className="copyright">
