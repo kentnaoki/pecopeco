@@ -18,7 +18,7 @@ const FooterStyle = styled.div`
     cursor: pointer;
   }
   .footer-content {
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 20px;
   }
   .footer-main {
