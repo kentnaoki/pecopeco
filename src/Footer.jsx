@@ -14,7 +14,7 @@ const FooterStyle = styled.div`
   }
   .footer-section a:hover {
     text-decoration: underline;
-    color: #745801;
+    color: white;
     cursor: pointer;
   }
   .footer-content {
@@ -31,6 +31,9 @@ const FooterStyle = styled.div`
     display: flex;
     align-items: center;
     background-color: #303030;
+  }
+  .row-content:hover {
+    background-color: #676464;
   }
   .icon img {
     max-width: 50px;
