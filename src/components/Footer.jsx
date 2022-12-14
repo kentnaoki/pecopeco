@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { footerItems } from "./FooterItems";
-import email from "./img/email.png";
+import email from "../img/email.png";
 
 const FooterStyle = styled.div`
   .footer-section {

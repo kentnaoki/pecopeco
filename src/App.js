@@ -1,8 +1,8 @@
 import "./App.css";
-import { LogoSection } from "./LogoSection";
-import { Footer } from "./Footer";
-import { Header } from "./Header";
-import { PostSection } from "./PostSection";
+import { LogoSection } from "./components/LogoSection";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { PostSection } from "./components/PostSection";
 
 function App() {
   return (

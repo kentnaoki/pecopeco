@@ -1,7 +1,7 @@
-import privacyPolicyImage from "./img/privacyPolicy.gif";
-import shieldSecurityImage from "./img/shieldSecurity.gif";
-import giftImage from "./img/gift.gif";
-import markdoorImage from "./img/markdoor.png";
+import privacyPolicyImage from "../img/privacyPolicy.gif";
+import shieldSecurityImage from "../img/shieldSecurity.gif";
+import giftImage from "../img/gift.gif";
+import markdoorImage from "../img/markdoor.png";
 
 export const footerItems = [
   {

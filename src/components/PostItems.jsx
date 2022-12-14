@@ -1,8 +1,8 @@
-import hikomaro from "./img/hikomaro.png";
-import restaurant from "./img/restaurant.png";
-import smartphone from "./img/smartphone.png";
-import discord from "./img/discord-trimmed.png";
-import twitter from "./img/twitter.png";
+import hikomaro from "../img/hikomaro.png";
+import restaurant from "../img/restaurant.png";
+import smartphone from "../img/smartphone.png";
+import discord from "../img/discord-trimmed.png";
+import twitter from "../img/twitter.png";
 import { Btn } from "./Btn";
 import styled from "styled-components";
 
