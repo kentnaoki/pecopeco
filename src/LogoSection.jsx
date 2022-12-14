@@ -8,16 +8,16 @@ const LogoSectionStyle = styled.div`
     width: 100%;
     position: relative;
     z-index: 1;
-    height: 240px;
+    height: 180px;
     display: block;
-    background-size: auto 200px;
+    background-size: auto 150px;
     background-repeat: no-repeat;
     background-color: black;
     background-position: center bottom;
   }
   .background-black-logo {
     background-color: rgba(0, 0, 0, 0.2);
-    height: 240px;
+    height: 180px;
   }
   .background-black {
     background-color: black;

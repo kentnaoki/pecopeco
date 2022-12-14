@@ -32,7 +32,7 @@ const ButtonStyle = styled.div`
     gap: 1rem;
   }
   button {
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
     border-radius: 17px;
     border: none;
