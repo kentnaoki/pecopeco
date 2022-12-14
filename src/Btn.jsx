@@ -71,8 +71,8 @@ export const Btn = (props) => {
     <div className="button-container">
       {props.btn.map((e) => {
         return (
-          <PopupStyle>
-            <button key={e.id} onClick={e.id === 2 ? handlePopup : null}>
+          <PopupStyle key={e.id}>
+            <button onClick={e.id === 2 ? handlePopup : null}>
               {e.content}
             </button>
             {popup && e.id === 2 && <Popup handlePopup={handlePopup} />}
