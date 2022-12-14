@@ -18,7 +18,7 @@ const FooterStyle = styled.div`
     cursor: pointer;
   }
   .footer-content {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 20px;
   }
   .footer-main {
@@ -44,7 +44,8 @@ const FooterStyle = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
     gap: 5px;
   }
   .contact-img-container {
