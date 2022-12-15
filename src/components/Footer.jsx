@@ -74,7 +74,7 @@ export const Footer = () => {
                 <div className="row-content" key={e.id}>
                   <div className="icon">
                     <a href="./">
-                      <img src={e.img} />
+                      <img src={e.img} alt={e.text} />
                     </a>
                   </div>
                   <div className="footer-info">
@@ -87,8 +87,8 @@ export const Footer = () => {
           <div className="footer-copyright">
             <div className="contact">
               <div className="contact-img-container">
-                <a>
-                  <img src={email} />
+                <a href="./">
+                  <img src={email} alt={"email"} />
                 </a>
               </div>
               <div>
